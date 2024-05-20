@@ -1,4 +1,3 @@
-import './App.css';
 
 
  const Greeting = (props) => (
