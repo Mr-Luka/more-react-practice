@@ -1,12 +1,12 @@
 import './App.css';
 
 
-
-
-export const Greeting = prop = (
+ const Greeting = (props) => (
   <div>
     <h2>Welcome!</h2>
-    <p>Hi, {prop.name}</p>
+    <p>Hi, {props.name}</p>
     <p>We are so happy to see you!</p>
   </div>
 )
+
+export default Greeting;
