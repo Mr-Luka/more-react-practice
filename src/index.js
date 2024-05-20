@@ -14,6 +14,7 @@ const App = () => {
       <NameTag name = "Luka"/>
       <NameTag name = {whatever}/>
       <NameTag name = "Slavica"/>
+      <NameTag name = "Proki"/>
     </h1>
   </div>
 )
