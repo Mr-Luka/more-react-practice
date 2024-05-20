@@ -5,13 +5,23 @@ import NameTag from "./nameTag.js";
 import "./index.css";
 
 
-const App = () => (
+const App = () => {
+  const whatever = "Marko"
+  return (
   <div className = "App">
     <h1>
-      <NameTag/>
+      <NameTag name = "Luka"/>
+      <NameTag name = {whatever}/>
+      <NameTag name = "Slavica"/>
     </h1>
   </div>
 )
+  }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
