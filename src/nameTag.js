@@ -1,3 +1,4 @@
+import React from 'react';
 
 const NameTag = () => (
     <div className ="name-tag">
