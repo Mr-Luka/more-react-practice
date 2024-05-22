@@ -29,3 +29,11 @@ root.render(
   </React.StrictMode>
 );
 
+
+
+const renderItem = charge => (
+  <p>
+    <div>{charge.name}</div>
+    <div>{charge.price}</div>
+  </p>
+);
