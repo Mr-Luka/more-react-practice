@@ -29,7 +29,10 @@ root.render(
   </React.StrictMode>
 );
 
-
+const Receipt = props =>{
+  const receiptItems = props.charges.map(renderItem);
+  return <div>{receiptItems}</div>
+}
 
 const renderItem = charge => (
   <p>
