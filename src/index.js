@@ -35,7 +35,7 @@ const Receipt = props =>{
 }
 
 const renderItem = charge => (
-  <p>
+  <p key={charge.id}>
     <div>{charge.name}</div>
     <div>{charge.price}</div>
   </p>
