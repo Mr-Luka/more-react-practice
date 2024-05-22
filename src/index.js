@@ -17,6 +17,7 @@ const App = () => {
       <NameTag name = "Slavica"/>
       <NameTag name = "Proki"/>
     </h1>
+    <Receipt charges={chargesData}/>
   </div>
 )
   }
@@ -35,8 +36,9 @@ const Receipt = props =>{
 }
 
 const renderItem = charge => (
-  <p key={charge.id}>
-    <div>{charge.name}</div>
-    <div>{charge.price}</div>
-  </p>
+  <div key={charge.id}>
+    <p>{charge.name}</p>
+    <p>${charge.price}</p>
+  </div>
 );
+
