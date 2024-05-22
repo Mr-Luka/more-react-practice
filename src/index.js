@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import NameTag from "./nameTag.js";
+import chargesData from "./charges.js";
 
 import "./index.css";
 
@@ -27,3 +28,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
